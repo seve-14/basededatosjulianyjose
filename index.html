@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>CRUD App</h1>
+        <form id="crudForm">
+            <input type="hidden" id="index" value="">
+            <div>
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" required>
+            </div>
+            <div>
+                <label for="age">Edad:</label>
+                <input type="number" id="age" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+            </div>
+            <div>
+                <button type="submit">Guardar</button>
+            </div>
+        </form>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Edad</th>
+                    <th>Email</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="crudTableBody">
+                <!-- Registros se insertarán aquí -->
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
