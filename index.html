@@ -3,41 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aplicación CRUD</title>
+    <title>BASE DE DATOS MUNDONET</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="login-section">
+    <div id="login-section" class="container">
         <h1>Iniciar Sesión</h1>
         <form id="login-form">
             <label for="username">Usuario:</label>
             <input type="text" id="username" required>
             <label for="password">Contraseña:</label>
             <input type="password" id="password" required>
-            <button type="submit">Iniciar Sesión</button>
+            <button type="submit" class="btn">Iniciar Sesión</button>
             <p id="login-error" class="error-message"></p>
         </form>
     </div>
     
-    <div id="app-section" style="display: none;">
-        <h1>Aplicación CRUD</h1>
+    <div id="app-section" class="container" style="display: none;">
+        <h1>BASE DE DATOS MUNDONET</h1>
         <form id="record-form">
-            <label for="name">Nombre:</label>
-            <input type="text" id="name" required>
-            <label for="age">Edad:</label>
-            <input type="number" id="age" required>
+            <label for="Ncelular">Ncelular:</label>
+            <input type="text" id="Ncelular" required>
+            <label for="Servicio">Servicio:</label>
+            <input type="text" id="Servicio" required>
+            <label for="perfil">Perfil:</label>
+            <input type="text" id="perfil" required>
             <label for="email">Email:</label>
             <input type="email" id="email" required>
-            <button type="submit">Agregar Registro</button>
+            <label for="contraseña">Contraseña:</label>
+            <input type="password" id="contraseña" required>
+            <button type="submit" class="btn">Agregar Registro</button>
         </form>
         
         <h2>Registros</h2>
         <table id="records-table">
             <thead>
                 <tr>
-                    <th>Nombre</th>
-                    <th>Edad</th>
+                    <th>Fecha</th>
+                    <th>Ncelular</th>
+                    <th>Servicio</th>
+                    <th>Perfil</th>
                     <th>Email</th>
+                    <th>Contraseña</th>
                     <th>Acciones</th>
                 </tr>
             </thead>
